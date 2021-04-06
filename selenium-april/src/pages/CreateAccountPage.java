@@ -1,25 +1,24 @@
 package pages;
 
-public class CreateAccountPage {
+public class CreateAccountPage extends BasePage {
 	private String _name = "Name";
 	private String _mail = "Mail";
 	private String _password = "Password";
 	private String _createAccount = "Create account";
 
-	
-	public void getName () {
-			System.out.println(_name);
-		}
-		
-		public void getMail () {
-			System.out.println(_mail);
-		}
-		
-		public void getPassword () {
-			System.out.println(_password);
-		}
-		
-		public void getCreateAccount () {
-			System.out.println(_createAccount);
-		}
+	public void getName() {
+		printMessage(_name);
+	}
+
+	public void getMail() {
+		printMessage(_mail);
+	}
+
+	public void getPassword() {
+		printMessage(_password);
+	}
+
+	public void getCreateAccount() {
+		printMessage(_createAccount);
+	}
 }

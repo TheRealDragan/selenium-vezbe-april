@@ -1,16 +1,17 @@
 package main;
 
+import imdb.Imdb;
 import pages.HomePage;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		HomePage homePage = new HomePage();
-		homePage.getLogo();
-		homePage.getSearchBar();
-		homePage.getMenu();
-		homePage.getClearAll();
+		Imdb imdb = new Imdb();
+		imdb.getHomePage().getLogo();
+		imdb.getHomePage().getSearchBar();
+		imdb.getHomePage().getMenu();
+		imdb.getHomePage().getClearAll();
 		
 		
 	}
