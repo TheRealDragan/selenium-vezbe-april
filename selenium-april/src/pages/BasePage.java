@@ -9,7 +9,7 @@ public class BasePage {
 		System.out.println("Sada stampamo sledeci parametar: "+printMessage);
 	}
 	
-	public WebElement findElement (String xpath) {
+	public static WebElement findElement (String xpath) {
 		return Browser.getBrowser().findElementByXPath(xpath);		
 	}
 	
